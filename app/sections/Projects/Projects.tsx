@@ -3,13 +3,15 @@
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 
-import TestimonialCard from "./TestimonialCard";
-import { testimonials } from "./testimonials.data";
+import ProjectCard from "./ProjectCard";
+import { projects } from "./projects.data";
 
-export default function Testimonials() {
+export default function Projects() {
   return (
-    <Section id="testimonials">
+    <Section id="projects">
       <Container>
+        {/* Header */}
+
         <div className="max-w-3xl">
           <span
             className="
@@ -17,7 +19,7 @@ export default function Testimonials() {
             font-medium
           "
           >
-            Testimonials
+            Featured Work
           </span>
 
           <h2
@@ -28,10 +30,10 @@ export default function Testimonials() {
             font-black
           "
           >
-            Trusted By
+            Projects &
             <span className="gradient-text">
               {" "}
-              Leaders
+              Case Studies
             </span>
           </h2>
 
@@ -43,29 +45,30 @@ export default function Testimonials() {
             dark:text-slate-400
           "
           >
-            Organizations and founders
-            trust me to solve complex
-            technical challenges and
-            deliver scalable systems.
+            A collection of systems,
+            platforms, products, and
+            digital experiences built
+            to solve complex business
+            challenges and drive growth.
           </p>
         </div>
+
+        {/* Cards */}
 
         <div
           className="
           mt-20
           grid
           gap-8
-          lg:grid-cols-3
+          lg:grid-cols-2
         "
         >
-          {testimonials.map(
-            (testimonial) => (
-              <TestimonialCard
-                key={testimonial.name}
-                testimonial={testimonial}
-              />
-            )
-          )}
+          {projects.map((project) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+            />
+          ))}
         </div>
       </Container>
     </Section>

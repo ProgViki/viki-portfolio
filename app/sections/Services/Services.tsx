@@ -3,13 +3,15 @@
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 
-import TestimonialCard from "./TestimonialCard";
-import { testimonials } from "./testimonials.data";
+import ServiceCard from "./ServiceCard";
+import { services } from "./services.data";
 
-export default function Testimonials() {
+export default function Services() {
   return (
-    <Section id="testimonials">
+    <Section id="services">
       <Container>
+        {/* Header */}
+
         <div className="max-w-3xl">
           <span
             className="
@@ -17,7 +19,7 @@ export default function Testimonials() {
             font-medium
           "
           >
-            Testimonials
+            Services
           </span>
 
           <h2
@@ -28,10 +30,10 @@ export default function Testimonials() {
             font-black
           "
           >
-            Trusted By
+            How I Can
             <span className="gradient-text">
               {" "}
-              Leaders
+              Help
             </span>
           </h2>
 
@@ -43,29 +45,30 @@ export default function Testimonials() {
             dark:text-slate-400
           "
           >
-            Organizations and founders
-            trust me to solve complex
-            technical challenges and
-            deliver scalable systems.
+            Whether you need technical
+            leadership, software architecture,
+            cloud transformation, or AI-powered
+            solutions, I help organizations
+            deliver scalable technology.
           </p>
         </div>
+
+        {/* Cards */}
 
         <div
           className="
           mt-20
           grid
           gap-8
-          lg:grid-cols-3
+          lg:grid-cols-2
         "
         >
-          {testimonials.map(
-            (testimonial) => (
-              <TestimonialCard
-                key={testimonial.name}
-                testimonial={testimonial}
-              />
-            )
-          )}
+          {services.map((service) => (
+            <ServiceCard
+              key={service.title}
+              service={service}
+            />
+          ))}
         </div>
       </Container>
     </Section>

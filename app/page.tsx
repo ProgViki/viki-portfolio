@@ -1,6 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import Hero from "./sections/Hero";
-import About from "./sections/About";
+import About from "./sections/About/About";
 import TechStack from "./sections/TechStack";
 import Competencies from "./sections/Competencies";
 import Projects from "./sections/Projects";
@@ -48,7 +48,7 @@ export default function HomePage() {
 
         {/* Contact */}
         <Contact />
-        
+
       </main>
 
       <Footer />
