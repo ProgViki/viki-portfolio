@@ -160,13 +160,13 @@ export default function Footer() {
               className="
                 rounded-xl
                 border
-                p-3
+                p-2
                 transition-all
                 hover:border-sky-500
                 hover:text-sky-500
               "
             >
-              <FaGithub size={30} />
+              <FaGithub size={14} />
             </Link>
 
             <Link
@@ -175,13 +175,13 @@ export default function Footer() {
               className="
                 rounded-xl
                 border
-                p-3
+                p-2
                 transition-all
                 hover:border-sky-500
                 hover:text-sky-500
               "
             >
-              <FaLinkedin size={18} />
+              <FaLinkedin size={14} />
             </Link>
 
             <Link
@@ -190,13 +190,13 @@ export default function Footer() {
               className="
                 rounded-xl
                 border
-                p-3
+                p-2
                 transition-all
                 hover:border-sky-500
                 hover:text-sky-500
               "
             >
-              <FaTwitter size={18} />
+              <FaTwitter size={14} />
             </Link>
 
             <Link
@@ -204,13 +204,13 @@ export default function Footer() {
               className="
                 rounded-xl
                 border
-                p-3
+                p-2
                 transition-all
                 hover:border-emerald-500
                 hover:text-emerald-500
               "
             >
-              <FaEnvelope size={18} />
+              <FaEnvelope size={14} />
             </Link>
           </div>
         </div>

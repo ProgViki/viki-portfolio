@@ -1,12 +1,13 @@
 import Navbar from "@/components/layout/Navbar";
 import Hero from "./sections/Hero";
 import About from "./sections/About/About";
-import TechStack from "./sections/TechStack";
-import Competencies from "./sections/Competencies";
-import Projects from "./sections/Projects";
-import Testimonials from "./sections/Testimonials";
+import Services from "./sections/Services/Services";
+import Competencies from "./sections/Competencies/Competencies";
+import Projects from "./sections/Projects/Projects";
+import Testimonials from "./sections/Testimonials/Testimonials";
 import Contact from "./sections/Contact";
 import Footer from "@/components/layout/Footer";
+import TechStack from "./sections/TechStack";
 
 
 export default function HomePage() {
@@ -14,7 +15,8 @@ export default function HomePage() {
     <>
       <Navbar />
 
-      <main className="overflow-x-hidden">
+      {/* <main className="overflow-x-hidden"> */}
+      <main>
 
         {/* Hero */}
         <Hero />
@@ -35,7 +37,7 @@ export default function HomePage() {
         {/* <CaseStudies /> */}
 
         {/* Services */}
-        {/* <Services /> */}
+        <Services />
 
         {/* Social Proof */}
         <Testimonials />
