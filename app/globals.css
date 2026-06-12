@@ -2,35 +2,50 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a;
 
-    --primary: #007acc;
-  --secondary: #10b981;
+  --vs-blue: #007acc;
+  --emerald: #10b981;
 }
-
 
 .dark {
-  --background: #0b1220;
+  --background: #020617;
   --foreground: #f8fafc;
+
+  --vs-blue: #38bdf8;
+  --emerald: #34d399;
 }
 
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    #007acc,
+    #10b981
+  );
+
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-bg {
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(0,122,204,.15),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(16,185,129,.15),
+      transparent 35%
+    );
 }
