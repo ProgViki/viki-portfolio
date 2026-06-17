@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden hero-bg pt-20 lg:pt-28">
+    <section className="relative min-h-screen overflow-hidden hero-bg pt-24 lg:pt-28">
       {/* Glows */}
       <div className="absolute top-20 left-20 h-96 w-96 rounded-full bg-sky-500/20 blur-3xl" />
       <div className="absolute bottom-20 right-20 h-96 w-96 rounded-full bg-emerald-500/20 blur-3xl" />

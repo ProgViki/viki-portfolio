@@ -74,7 +74,7 @@ export default function Navbar() {
                 flex-shrink-0
               "
             >
-              Viki
+              Prog
               <span
                 className="
                   bg-gradient-to-r
@@ -84,7 +84,7 @@ export default function Navbar() {
                   text-transparent
                 "
               >
-                GenPro
+                Viki
               </span>
             </Link>
 
