@@ -17,7 +17,7 @@ const navItems = [
   {
     label: "Services",
     href: "#services",
-  },
+  }, 
   {
     label: "Blog",
     href: "#blog",
@@ -72,7 +72,7 @@ export default function Navbar() {
               font-black
             "
             >
-              Viki
+              Prog
               <span
                 className="
                 bg-gradient-to-r
@@ -82,7 +82,7 @@ export default function Navbar() {
                 text-transparent
               "
               >
-                GenPro
+                Viki
               </span>
             </Link>
 
