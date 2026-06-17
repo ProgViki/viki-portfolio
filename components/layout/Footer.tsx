@@ -119,7 +119,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-xl font-bold">
-              Viki<span className="text-sky-500">GenPro</span>
+              Prog<span className="text-sky-500">Viki</span>
             </h3>
 
             <p className="mt-2 text-sm text-slate-500">
@@ -155,7 +155,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-4">
             <Link
-              href="https://github.com"
+              href="https://github.com/ProgViki"
               target="_blank"
               className="
                 rounded-xl
@@ -170,7 +170,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/ogunwehin-victor"
               target="_blank"
               className="
                 rounded-xl
@@ -185,7 +185,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="https://twitter.com"
+              href="https://twitter.com/vikistringz"
               target="_blank"
               className="
                 rounded-xl
@@ -200,7 +200,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="mailto:hello@yourdomain.com"
+              href="mailto:vikistrings@gmail.com"
               className="
                 rounded-xl
                 border
@@ -218,7 +218,7 @@ export default function Footer() {
         {/* Copyright */}
 
         <div className="mt-12 text-center text-sm text-slate-500">
-          © {year} Viki GenPro. All rights reserved.
+          © {year} ProgViki. All rights reserved.
         </div>
       </div>
     </footer>
