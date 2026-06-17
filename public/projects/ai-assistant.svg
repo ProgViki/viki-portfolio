@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a0a2e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blueGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007ACC" />
+      <stop offset="100%" style="stop-color:#10B981" />
+    </linearGradient>
+    <linearGradient id="cardGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a3a;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#0a0a1a;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007ACC" />
+      <stop offset="50%" style="stop-color:#10B981" />
+      <stop offset="100%" style="stop-color:#007ACC" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg3)"/>
+  
+  <!-- Glowing Orbs -->
+  <circle cx="200" cy="150" r="150" fill="#007ACC" opacity="0.08"/>
+  <circle cx="600" cy="450" r="180" fill="#10B981" opacity="0.08"/>
+  <circle cx="400" cy="300" r="250" fill="#007ACC" opacity="0.04"/>
+
+  <!-- AI Chat Interface -->
+  <g transform="translate(60, 40)">
+    <!-- Chat Window -->
+    <rect x="0" y="0" width="680" height="500" rx="24" fill="url(#cardGrad3)"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="680" height="60" rx="24" fill="url(#blueGrad3)" opacity="0.2"/>
+    <rect x="20" y="15" width="40" height="30" rx="8" fill="url(#blueGrad3)"/>
+    <text x="75" y="37" fill="#ffffff" font-size="16" font-family="Arial" font-weight="bold">AI Assistant</text>
+    <circle cx="640" cy="30" r="12" fill="#10B981" opacity="0.5"/>
+    
+    <!-- Chat Messages -->
+    <!-- AI Message -->
+    <rect x="20" y="80" width="250" height="40" rx="12" fill="#007ACC" opacity="0.2"/>
+    <text x="35" y="105" fill="#60A5FA" font-size="12" font-family="Arial">👋 Hello! How can I help you?</text>
+    
+    <!-- User Message -->
+    <rect x="400" y="140" width="250" height="40" rx="12" fill="#10B981" opacity="0.2"/>
+    <text x="415" y="165" fill="#34D399" font-size="12" font-family="Arial">I need help with my account</text>
+    
+    <!-- AI Message -->
+    <rect x="20" y="200" width="350" height="60" rx="12" fill="#007ACC" opacity="0.15"/>
+    <text x="35" y="225" fill="#93C5FD" font-size="12" font-family="Arial">I can help with that! What specific</text>
+    <text x="35" y="245" fill="#93C5FD" font-size="12" font-family="Arial">issue are you experiencing?</text>
+    
+    <!-- User Message -->
+    <rect x="350" y="280" width="300" height="40" rx="12" fill="#10B981" opacity="0.2"/>
+    <text x="365" y="305" fill="#34D399" font-size="12" font-family="Arial">I can't reset my password</text>
+    
+    <!-- AI Typing Indicator -->
+    <rect x="20" y="340" width="100" height="40" rx="12" fill="#007ACC" opacity="0.1"/>
+    <circle cx="40" cy="360" r="4" fill="#60A5FA" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="55" cy="360" r="4" fill="#60A5FA" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="70" cy="360" r="4" fill="#60A5FA" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="1.5s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Input Box -->
+    <rect x="20" y="430" width="600" height="45" rx="22" fill="#2d2d4a" opacity="0.6"/>
+    <text x="40" y="458" fill="#6a6a8a" font-size="13" font-family="Arial">Type your message...</text>
+    <rect x="590" y="440" width="25" height="25" rx="12" fill="url(#blueGrad3)"/>
+    <polygon points="602,448 602,457 609,452.5" fill="white"/>
+    
+    <!-- AI Brain Visualization -->
+    <g transform="translate(550, -20)">
+      <circle cx="0" cy="0" r="80" fill="none" stroke="#007ACC" stroke-width="1" opacity="0.1"/>
+      <circle cx="0" cy="0" r="60" fill="none" stroke="#10B981" stroke-width="1" opacity="0.08"/>
+      <circle cx="0" cy="0" r="40" fill="none" stroke="#007ACC" stroke-width="1" opacity="0.06"/>
+      <circle cx="0" cy="0" r="20" fill="#007ACC" opacity="0.1">
+        <animate attributeName="r" values="15;25;15" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.1;0.2;0.1" dur="3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <text x="400" y="580" fill="#ffffff" font-size="20" font-family="Arial" font-weight="bold" text-anchor="middle" opacity="0.8">AI Customer Assistant</text>
+</svg>
