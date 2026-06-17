@@ -185,7 +185,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="https://twitter.com/vikistringz"
+              href="https://twitter.com/VictorOgunwehin"
               target="_blank"
               className="
                 rounded-xl
