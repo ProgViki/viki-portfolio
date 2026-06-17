@@ -72,6 +72,8 @@ export default function Navbar() {
                 sm:text-2xl
                 font-black
                 flex-shrink-0
+                text-gray-900
+                dark:text-white
               "
             >
               Prog
@@ -104,8 +106,11 @@ export default function Navbar() {
                   className="
                     text-sm
                     font-medium
+                    text-gray-700
+                    dark:text-gray-300
                     transition-colors
                     hover:text-sky-500
+                    dark:hover:text-sky-400
                   "
                 >
                   {item.label}
@@ -149,7 +154,14 @@ export default function Navbar() {
               <ThemeToggle />
               <button
                 onClick={() => setOpen(!open)}
-                className="p-1 hover:text-sky-500 transition-colors"
+                className="
+                  p-1 
+                  text-gray-700 
+                  dark:text-gray-300
+                  hover:text-sky-500 
+                  dark:hover:text-sky-400
+                  transition-colors
+                "
                 aria-label={open ? "Close menu" : "Open menu"}
               >
                 {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -183,26 +195,37 @@ export default function Navbar() {
               h-full
               w-[300px]
               bg-white
-              dark:bg-slate-950
-              p-6
+              dark:bg-slate-900
               shadow-2xl
               animate-in
               slide-in-from-right
               duration-300
+              border-l
+              border-gray-200
+              dark:border-gray-800
             "
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center justify-between mb-8">
-              <span className="text-lg font-bold">Menu</span>
+            <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-800">
+              <span className="text-lg font-bold text-gray-900 dark:text-white">
+                Menu
+              </span>
               <button
                 onClick={() => setOpen(false)}
-                className="p-1 hover:text-sky-500 transition-colors"
+                className="
+                  p-1 
+                  text-gray-700 
+                  dark:text-gray-300
+                  hover:text-sky-500 
+                  dark:hover:text-sky-400
+                  transition-colors
+                "
               >
                 <X className="w-6 h-6" />
               </button>
             </div>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col p-6 gap-2">
               {navItems.map((item) => (
                 <Link
                   key={item.label}
@@ -211,12 +234,20 @@ export default function Navbar() {
                   className="
                     text-lg
                     font-medium
+                    text-gray-700
+                    dark:text-gray-200
                     transition-colors
                     hover:text-sky-500
-                    py-2
+                    dark:hover:text-sky-400
+                    py-3
+                    px-4
+                    rounded-xl
+                    hover:bg-gray-100
+                    dark:hover:bg-gray-800
                     border-b
                     border-gray-100
                     dark:border-gray-800
+                    last:border-0
                   "
                 >
                   {item.label}

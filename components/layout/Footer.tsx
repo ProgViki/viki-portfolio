@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-// import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
 export default function Footer() {
